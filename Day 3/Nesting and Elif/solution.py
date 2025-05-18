@@ -1,14 +1,14 @@
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
+weight = 85
+height = 1.85
 
-if height >= 120:
-    print("You can ride the rollercoaster")
-    age = int(input("What is your age? "))
-    if age <= 12:
-        print("Please pay $5.")
-    elif age <= 18:
-        print("Please pay $7.")
-    else:
-        print("Please pay $12.")
+bmi = weight / (height ** 2)
+if bmi<18.5:
+    print("underweight")
+elif bmi>18 and bmi<25:
+    print("normal")
+elif bmi>25:
+    print("overweight")
 else:
-    print("Sorry you have to grow taller before you can ride.")
+    print("you have entererd wrong number please learn number and then place proper input")
+# 🚨 Do not modify the values above
+# Write your code below 👇
