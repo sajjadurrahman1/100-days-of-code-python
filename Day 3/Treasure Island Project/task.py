@@ -20,5 +20,31 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.")
+print("Welcome to Treasure Island.\n")
+print("Your mission is to find the treasure.\n")
+
+side_choice = input("Which side do you want to go? Left or Right\n")
+if side_choice == "Right":
+    print("Wasted!!! Game Over")
+elif side_choice == "Left":
+    print("Ok Great. You need to choose one more option!!")
+
+    option_choice = input("Do you want to swim or wait?\n")
+    if option_choice == "swim":
+        print("Wasted!!! Game Over")
+    elif option_choice == "wait":
+        print("Now you need to choose a color.")
+        color = input("Please choose a color: blue, red, or yellow\n")
+
+        if color == "blue":
+            print("Wasted!!! Game Over")
+        elif color == "red":
+            print("Wasted!!! Game Over")
+        elif color == "yellow":
+            print("Congratulations!!!! You won the game.")
+        else:
+            print("You have chosen a wrong color.")
+
+
+
+
